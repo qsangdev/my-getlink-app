@@ -84,10 +84,18 @@ function App() {
           <a href={`http://${getLink}`} target="_blank" rel="noreferrer">
             {getLink}
           </a>
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText(getLink);
+              alert("Copied to clipboard");
+            }}
+          >
+            Copy
+          </button>
         </div>
       )}
       {showResult && <ReactCanvasConfetti />}
-      
+
       <div className="footer">© 2022 shrtcode by QS </div>
     </div>
   );

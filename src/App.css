@@ -134,6 +134,16 @@ span {
   margin-top: 50px;
 }
 
+.result button {
+  margin-top: 20px;
+  height: 40px;
+  border-radius: 7px;
+  color: white;
+  background-color: #21253f;
+  cursor: pointer;
+
+}
+
 #display-none {
   display: none;
 }
